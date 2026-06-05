@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    height: 210px;
+}
+
+#logo-footer {
+    margin-top: 60px;
+}
+
+#copyright {
+    color: white;
+    margin-top: 40px;
+}
+
+#copyright::before {
+    font: var(--fa-font-regular);
+    content: '\f1f9';
+    margin-right: 5px;
+}

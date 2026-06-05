@@ -1,0 +1,22 @@
+.header {
+    background-color: white;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'montserrat';
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+}
+
+/*#home {
+    border-bottom: 1px solid black;
+}*/
