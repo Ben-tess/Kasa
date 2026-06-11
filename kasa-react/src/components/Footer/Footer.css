@@ -1,6 +1,8 @@
 .footer {
     background-color: black;
     height: 210px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 #logo-footer {

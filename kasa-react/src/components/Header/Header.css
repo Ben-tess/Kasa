@@ -1,5 +1,6 @@
 .header {
     background-color: white;
+    margin: 50px 100px 50px 100px;
 }
 
 .header-content {
@@ -16,7 +17,3 @@
     color: black;
     margin-left: 20px;
 }
-
-/*#home {
-    border-bottom: 1px solid black;
-}*/
