@@ -7,7 +7,7 @@ import '../../components/Card/Card.css'
 
 function Home() {
     return (
-        <header className='home'>
+        <div className='home'>
             <div className='home-content'>
                 <div className='banner-home'>
                     <img className='img-home' 
@@ -25,7 +25,7 @@ function Home() {
                     )}
                 </div>
             </div>
-        </header>
+        </div>
     )
 }
 

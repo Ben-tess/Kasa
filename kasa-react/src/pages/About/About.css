@@ -13,3 +13,63 @@
     filter: brightness(70%);
     box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.253);
 }
+
+.collapse-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collapse-about-title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    margin-top: 30px;
+    width: 1024px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    color: white;
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.collapse-about-description {
+    width: 1024px;
+    color: black;
+    font-family: 'montserrat';
+    font-size: 18px;
+    padding: 20px;
+    text-align: left;
+    background-color: #F6F6F673;
+}
+
+.collapse-about-title,
+.collapse-about-description {
+    box-sizing: border-box;
+}
+
+.collapse-about-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.collapse-about-icon::after {
+    font: var(--fa-font-solid);
+    content: '\f106';
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 26px;
+    transition: transform 0.3s ease;
+}
+
+.collapse-about-icon.open::after {
+    transform: rotate(180deg);
+}
