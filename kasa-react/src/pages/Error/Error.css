@@ -1,4 +1,21 @@
 .error {
     background-color: white;
-    height: 50em;
+    height: auto;
+}
+
+.error-content h1,
+.error-content h2 {
+    color: #FF6060;
+    font-family: "montserrat";
+}
+.error-title {
+    font-size: 290px;
+    font-weight: 700;
+    margin: 200px;
+}
+
+.error-link {
+    display: block;
+    color: black;
+    margin: 100px 0 50px 0;
 }
