@@ -1,23 +1,22 @@
 import { useState } from "react";
+import './Collapse.css'
 
 function Collapse({ title, children }) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="collapse-item">
-        <div className="collapse-about-title">
+        <div className="collapse-title">
             <span>{title}</span>
             <button
-                className={`collapse-about-icon ${open ? "open" : ""}`}
+                className={`collapse-icon ${open ? "open" : ""}`}
                 onClick={() => setOpen(prev => !prev)}
                 aria-expanded={open}
             />
         </div>
-        {open && (
-            <div className='collapse-about-description'>
-                {children}
-            </div>
-        )}
+        <div className={`collapse-description ${open ? "open" : ""}`}>
+            {children}
+        </div>
     </div>
   );
 }
