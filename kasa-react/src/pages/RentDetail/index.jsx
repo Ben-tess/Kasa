@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import Collapse from '../../components/Collapse'
 import Error from '../Error'
-import './RentDetail.css'
+import Slideshow from '../../components/Slideshow'
+import './RentDetail.sass'
 
 function RentDetail() {
     const { id } = useParams()
@@ -16,35 +17,35 @@ function RentDetail() {
 
     return (
         <div className='rent'>
-            <div className='rent-content'>
-                <div className='rent-cover'>
-                    <img 
-                        src={rent.cover}
-                        alt={rent.title}
+            <div className='rent__content'>
+                <div className='rent__cover'>
+                    <Slideshow 
+                        pictures={rent.pictures}
+                        title={rent.title}
                     />
                 </div>
-                <div className='rent-informations'>
-                    <div className='rent-informations-top'>
-                        <div className='rent-title'>
+                <div className='rent__informations'>
+                    <div className='rent__informations-top'>
+                        <div className='rent__title'>
                             <h1>{rent.title}</h1>
                             <h2>{rent.location}</h2>
                         </div>
-                        <div className='rent-host'>
+                        <div className='rent__host'>
                             <p>{rent.host.name}</p>
                             <img
                                 src={rent.host.picture}
                             />
                         </div>
                     </div>
-                    <div className='rent-informations-middle'>
-                        <div className='rent-tags'>
+                    <div className='rent__informations-middle'>
+                        <div className='rent__tags'>
                             {rent.tags.map((tag) => (                           
-                                <span key={tag} className='rent-tag'>
+                                <span key={tag} className='rent__tag'>
                                     {tag}
                                 </span>
                             ))}
                         </div>
-                        <div className='rent-rating'>
+                        <div className='rent__rating'>
                             {[1, 2, 3, 4, 5].map((star) => (
                                 <FontAwesomeIcon 
                                     key={star}
@@ -56,15 +57,15 @@ function RentDetail() {
                             ))}
                         </div>
                     </div>
-                    <div className='rent-informations-bottom'>
-                        <div className='rent-collapse-description'>
+                    <div className='rent__informations-bottom'>
+                        <div className='rent__collapse-description'>
                             <Collapse title="Description">
                             {rent.description}
                         </Collapse>
                         </div>
-                        <div className='rent-collapse-equipments'>
+                        <div className='rent__collapse-equipments'>
                             <Collapse title="Équipements">
-                            <ul className='equipments-list'>
+                            <ul className='equipments__list'>
                                 {rent.equipments.map((equipment) => (
                                     <li key={equipment}>{equipment}</li>
                                 ))}

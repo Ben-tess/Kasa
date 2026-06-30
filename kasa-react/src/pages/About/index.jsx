@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom'
 import PhotoMountain from '../../assets/images/img-montagne-cropped.jpg'
 import Collapse from '../../components/Collapse'
-import './About.css'
+import './About.sass'
 
 function About() {
     return (
-        <header className='about'>
-            <div className='about-content'>
-                <div className='banner-about'>
-                    <img className='img-about' 
+        <div className='about'>
+            <div className='about__content'>
+                <div className='about__banner'>
+                    <img className='about__img' 
                         src={PhotoMountain} 
                         alt='Photo de montagnes' />
                 </div>
-                <div className='collapse-about'>
+                <div className='about__collapse'>
                         <Collapse title="Fiabilité">
                             Les annonces postées sur Kasa garantissent une 
                             fiabilité totale. Les photos sont conformes aux 
@@ -43,7 +43,7 @@ function About() {
                         </Collapse>
                 </div>
             </div>
-        </header>
+        </div>
     )
 }
 

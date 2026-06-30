@@ -1,0 +1,65 @@
+.home 
+    background-color: white
+
+    .home__banner 
+        position: relative
+    
+    .home__img 
+        max-width: 1240px
+        width: 100%
+        height: 220px
+        object-fit: cover
+        border-radius: 25px
+        filter: brightness(40%)
+        box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25)
+    
+    .home__txt
+        width: 80%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        line-height: 1.2
+        font-family: 'montserrat'
+        color: white
+        font-size: 48px
+        font-weight: 700
+        text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25)
+    
+    .home__cards-container 
+        background-color: #F6F6F6
+        height: auto
+        max-width: 1130px
+        border-radius: 25px
+        margin: 50px auto
+        padding: 55px
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 55px
+
+@media (max-width: 1440px)
+
+    .home,
+    .home__cards-container
+        margin-left: 20px
+        margin-right: 20px 
+
+@media (max-width: 768px)
+
+    .home
+
+        .home__img
+            height: 110px
+
+        .home__txt
+            font-size: 24px
+            left: 40%
+            text-align: left
+            width: 70%
+
+        .home__cards-container
+            margin: 20px auto
+            padding: 0
+            background-color: white
+            gap: 20px

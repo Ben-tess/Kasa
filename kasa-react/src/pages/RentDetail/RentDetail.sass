@@ -1,0 +1,110 @@
+.rent__content 
+    display: flex
+    flex-direction: column
+    margin: auto
+    width: 100%
+    max-width: 1240px
+
+    .rent__cover img 
+        width: 100%
+        height: 415px
+        object-fit: cover
+        border-radius: 25px
+        margin-bottom: 10px
+
+    .rent__informations
+        height: auto
+        margin-bottom: 20px
+
+        .rent__informations-top 
+            display: flex
+            justify-content: space-between
+            align-items: center
+        
+            .rent__title
+                display: flex
+                flex-direction: column
+                align-items: start
+
+                h1
+                    margin-bottom: 15px
+                    color: #FF6060
+                    font-size: 36px
+
+                h2
+                    color: black
+                    font-size: 18px
+
+            .rent__host 
+                display: flex
+                align-items: center
+                margin: 10px 0
+                color: #FF6060
+                font-size: 18px
+
+                p 
+                    max-width: 90px
+                    text-align: right
+                    font-size: 18px
+                    margin-right: 10px
+
+                img 
+                    border-radius: 50%
+                    width: 60px
+                    height: auto
+
+            .rent__title h1,
+            .rent__title h2,
+            .rent__host p,
+            .rent__tag 
+                font-weight: 500
+                font-family: 'montserrat'
+
+        .rent__informations-middle
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 10px
+
+            .rent__tags 
+                display: flex
+                flex-direction: row
+
+                .rent__tag 
+                    display: inline-block
+                    font-size: 14px
+                    width: 115px
+                    height: 25px
+                    background-color: #FF6060
+                    color: white
+                    border-radius: 10px
+                    margin-right: 10px
+
+            .rent__rating 
+                display: flex
+                justify-content: right
+
+                .star 
+                    color: #E3E3E3
+                    margin: 5px
+                    font-size: 24px
+
+                .star.active 
+                    color: #FF6060
+
+        .rent__informations-bottom 
+            display: flex
+            justify-content: space-between
+
+            .rent__collapse-description,
+            .rent__collapse-equipments 
+                max-width: 47%
+
+            .collapse__title,
+            .collapse__description 
+                max-width: 100%
+
+            .equipments__list 
+                list-style: none
+                padding: 0
+                margin: 0

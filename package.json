@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "react-router-dom": "^7.16.0"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.100.0"
   }
 }
